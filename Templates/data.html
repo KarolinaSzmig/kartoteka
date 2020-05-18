@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kartoteka</title>
+</head>
+<body>
+<form action="/" method="post">
+
+
+<br>
+    <input type="radio" id="read" name="mode" value="reading" required>
+    <label for="read">Reading mode</label>
+    <br>
+    <input type="radio" id="write" name="mode" value="writing" required>
+    <label for="write">Writing mode</label>
+    <br>
+
+
+
+    <label for="PESEL">Set PESEL:</label>
+    <br>
+    <input type="number"  name="PESEL" id="PESEL" required>
+    <br>
+    <label for="name">Set name:</label>
+    <br>
+    <input type="text" name="Name" id="name" required>
+    <br>
+    <label for="surname">Set surname:</label>
+    <br>
+    <input type="text" name="Surname" id="surname" required>
+    <br>
+    <input type="checkbox" name="neurology" value="neurology" /> Neurology
+    <input type="checkbox" name="cardiology" value="cardiology" /> Cardiology
+    <input type="checkbox" name="urology" value="urologu" /> Urology
+    <br>
+    <label for="illnesses">Ilnesses informations:</label>
+    <br>
+    <input type="text" name="Illnesses" id="illnesses" required>
+    <br>
+
+
+
+    {% if enable %}
+    <button type="submit" >Save!</button>
+    {% else %}
+    <button type="submit" disabled>Save!</button>
+    {% endif %}
+
+
+
+
+
+
+
+</form>
+</body>
+</html>
